@@ -19,7 +19,7 @@ app.patch('/', (req,res)=>{
 });
 
 app.delete('/test', (req,res)=>{
-    res.send('I am using post method summit on server ');
+    res.send('I am using post method delete ');
 });
 app.listen(3000, ()=>{
     console.log('Server is running on port 3000');
