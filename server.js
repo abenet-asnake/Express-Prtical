@@ -15,8 +15,10 @@ router.use(logger);
 
 // Route handlers
 // write method is not response
+// always use res.end() if we use write method
 router.get('/', (req, res) => {
   res.write('Home Page');
+  res.end();
 });
 
 router.get('/about', (req, res) => {
