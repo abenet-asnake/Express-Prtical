@@ -30,6 +30,21 @@ router.get('/about', (req, res, next) => {
 
 });
 
+router.get('/about/a', (err,req, res, next) => {
+  if(err) {
+    console.error(err);
+    res.status(500).send('The Server is Down');
+    next();
+  }
+  res.write('About Page ');
+  next();
+  res.write('Welcome to');
+ 
+  res.end();
+
+});
+
+
 // Register the router with the main app
 app.use('/', router);
 
