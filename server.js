@@ -17,7 +17,7 @@ app.get(`/${user}/:id`, function (req,res){
   console.log('This is  server ' + req.params.server);
 
 });
-
+// dynamically regular expressions 
 app.get(`/a/:id([0-9]{3})`, function (req,res){
   res.send(`WellCome, ${user}`); 
   console.log('This Is server ');
