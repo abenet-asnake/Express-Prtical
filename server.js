@@ -24,7 +24,9 @@ router.get('/', (req, res) => {
 router.get('/about', (req, res, next) => {
   res.write('About Page');
   next();
-  res.write('Welcome to').end();
+  res.write('Welcome to');
+ 
+  res.end();
 
 });
 
@@ -35,3 +37,4 @@ app.use('/', router);
 app.listen(3000, () => {
   console.log('Server is running on port 3000');
 });
+
