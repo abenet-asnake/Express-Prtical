@@ -21,8 +21,11 @@ router.get('/', (req, res) => {
   res.end();
 });
 
-router.get('/about', (req, res) => {
-  res.send('About Page');
+router.get('/about', (req, res, next) => {
+  res.write('About Page');
+  next();
+  res.write('Welcome to').end();
+
 });
 
 // Register the router with the main app
