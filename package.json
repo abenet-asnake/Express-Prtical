@@ -2,11 +2,11 @@
   "name": "express-prtical",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "token.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "dev": "nodemon server.js"
+    "dev": "nodemon ."
   },
   "keywords": [],
   "author": "",
